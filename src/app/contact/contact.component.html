@@ -1,0 +1,86 @@
+<div fxLayout="row" fxLayoutAlign="center center" fxFill>
+    <div fxLayout="column" fxFlex="80" fxLayoutAlign="center center">
+        <div fxLayout="row" fxLayoutAlign="center center">
+            <div fxLayout="column" fxLayoutAlign="center center" fxFlex="100" class="textAlignCenter">
+                <h2>Let's connect</h2>
+                <p>Feel free to reach out if you're interested in working together or being friends! You can also email
+                    me
+                    at <span class="customeLink">matekatukiso@gmail.com</span>.
+                </p>
+            </div>
+        </div>
+
+        <!-- Form Container -->
+        <div fxLayout="row" fxLayoutAlign="center center" class="fullWidth">
+            <div fxLayout="column" fxFlex="80" fxLayoutAlign="center center">
+                <form class="fullWidth">
+                    <!-- First and Last Name -->
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <div fxLayout="column" fxFlex="45" fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input type="text" matInput [(ngModel)]="contact.firstName" name="firstName"
+                                    placeholder="Please enter your First Name">
+                                <mat-error>
+                                    First Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                        <div fxLayout="column" fxFlex="45" fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input type="text" matInput [(ngModel)]="contact.lastName" name="lastName"
+                                    placeholder="Please enter your Last Name">
+                                <mat-error>
+                                    Last Name is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- Email -->
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input type="email" matInput [(ngModel)]="contact.email"
+                                    placeholder="Please enter your Email Address" name="email">
+                                <mat-error>
+                                    Email is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- Subject -->
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <input type="text" matInput [(ngModel)]="contact.subject"
+                                    placeholder="Please enter your Subject" name="subject">
+                                <mat-error>
+                                    Subject is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- Message -->
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center" class="textArea">
+                            <mat-form-field class="example-full-width" appearance="outline">
+                                <textarea matInput placeholder="What's on your mind" [(ngModel)]="contact.message" name="message"></textarea>
+                                <mat-error>
+                                    Message is <strong>required</strong>
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                    <!-- Action Buttons -->
+                    <div fxLayout="row" fxLayoutAlign="space-between center">
+                        <div fxLayout="column" fxFlex="48" fxLayoutAlign="start stretch">
+                            <button mat-raised-button color="primary">Submit</button>
+                        </div>
+                        <div fxLayout="column" fxFlex="48" fxLayoutAlign="start stretch">
+                            <button mat-raised-button>Cancel</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

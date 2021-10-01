@@ -1,0 +1,20 @@
+<div fxLayout="column" fxFill>
+    <!-- Toolbar -->
+    <div fxLayout="row" fxLayoutAlign="space-between center" class="toolbar">
+        <div fxLayout="column" fxFlex="200px" fxLayoutAlign="start stretch" (click)="navigateTo('home')" class="pointer">
+            <img src="../../assets/logo.png" alt="Logo">
+        </div>
+        <div fxLayout="column" fxLayoutAlign="start stretch">
+            <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="5px" class="paddingRight10px">
+                <div fxLayout="column" fxFlex="100px" fxLayoutAlign="center center" *ngFor="let item of menuItems"
+                    class="navItem pointer" [class.activeRoute]="activeRoute == item.value" (click)="navigateTo(item.value)">
+                    {{item.name}}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Display -->
+    <div fxLayout="column" fxLayoutAlign="start stretch" class="mainRouterContainer">
+        <router-outlet></router-outlet>
+    </div>
+</div>

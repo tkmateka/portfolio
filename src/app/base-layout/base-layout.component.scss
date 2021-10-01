@@ -1,0 +1,25 @@
+.toolbar {
+    height: 60px;
+    padding-left: 20px;
+    background-color: white;
+    color: black;
+}
+.mainRouterContainer {
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+.navItem {
+    font-weight: bold;
+}
+.activeRoute, .navItem:hover {
+    color: white;
+    background-color: #673ab7;
+    padding: 5px 0;
+    border-radius: 3px;
+}
+.paddingRight10px {
+    padding-right: 10px;
+}
+.pointer {
+    cursor: pointer;
+}
