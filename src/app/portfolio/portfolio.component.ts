@@ -19,6 +19,12 @@ export class PortfolioComponent implements OnInit {
       link: "https://okel-holdings.web.app/", 
       image: "../../assets/projectLogos/okel.png", 
       description: "Whether you're Non-SA Citizen, Self-Employed or ITC Listed... We are here to help you find your Dream Car." 
+    },
+    { 
+      name: "KasiChat", 
+      link: "https://kasi-chat.herokuapp.com/", 
+      image: "../../assets/projectLogos/kasichat.png", 
+      description: "Use this web app to communicate with people who are online" 
     }
   ];
 
