@@ -9,55 +9,16 @@ import { Router } from '@angular/router';
 export class PortfolioComponent implements OnInit {
   workItems: any[] = [
     { 
-      name: "Angular.io", 
-      link: "https://angular.io/", 
-      image: "../../assets/projectLogos/angular.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
+      name: "Faith Academy Christian School", 
+      link: "https://faithacademy-72d2b.web.app", 
+      image: "../../assets/projectLogos/faithAcademy.png", 
+      description: "A private school for everyone in Ekurhuleni. To measure the greatness of a school, some would count the pupils." 
     },
     { 
-      name: "Firebase", 
-      link: "https://firebase.google.com/", 
-      image: "../../assets/projectLogos/Firebase_Logo.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },{ 
-      name: "Flex Layout", 
-      link: "https://tburleson-layouts-demos.firebaseapp.com/", 
-      image: "../../assets/projectLogos/flex.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },
-    { 
-      name: "Angular.io", 
-      link: "https://angular.io/", 
-      image: "../../assets/projectLogos/angular.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },
-    { 
-      name: "Firebase", 
-      link: "https://firebase.google.com/", 
-      image: "../../assets/projectLogos/Firebase_Logo.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },{ 
-      name: "Flex Layout", 
-      link: "https://tburleson-layouts-demos.firebaseapp.com/", 
-      image: "../../assets/projectLogos/flex.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },
-    { 
-      name: "Angular.io", 
-      link: "https://angular.io/", 
-      image: "../../assets/projectLogos/angular.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },
-    { 
-      name: "Firebase", 
-      link: "https://firebase.google.com/", 
-      image: "../../assets/projectLogos/Firebase_Logo.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
-    },{ 
-      name: "Flex Layout", 
-      link: "https://tburleson-layouts-demos.firebaseapp.com/", 
-      image: "../../assets/projectLogos/flex.png", 
-      description: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dicta, facilis sequi nihil amet.." 
+      name: "OKEL Holdings", 
+      link: "https://okel-holdings.web.app/", 
+      image: "../../assets/projectLogos/okel.png", 
+      description: "Whether you're Non-SA Citizen, Self-Employed or ITC Listed... We are here to help you find your Dream Car." 
     }
   ];
 

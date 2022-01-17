@@ -2,17 +2,17 @@
     <div fxLayout="column" fxFlex="100" fxLayoutAlign="center center">
         <div fxLayout="column" fxLayoutAlign="center center">
             <h2>My Recent Work</h2>
-            <p>Here are a few design projects I've worked on recently. Want to see more?
+            <p>Here are a few design projects I've worked on recently. Want to chat?
                 <span (click)="navigateTo('home/contact')" class="customeLink">Email me</span>.
             </p>
         </div>
 
         <!-- My Work -->
-        <div fxLayout="row" fxLayoutAlign="space-around center" class="width70 wrap">
+        <div fxLayout="row" fxLayoutAlign="space-around center" class="width95 wrap">
             <div fxLayout="column" fxFlex="30" fxLayoutAlign="center center" *ngFor="let work of workItems" class="cardContainer">
                 <mat-card>
                     <div class="logo">
-                        <img [src]="work.image" alt="Angular Logo">
+                        <img [src]="work.image" alt="Angular Logo" >
                     </div>
                     <div class="description">
                         <p>{{work.description}}</p>
